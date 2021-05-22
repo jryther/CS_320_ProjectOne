@@ -43,7 +43,6 @@ class ContactTest {
 		Contact contact = new Contact("1", "Josh", "Ryther", "8888888888", "3232 Road Ln");
 		Assertions.assertThrows(NumberFormatException.class, () -> {
 			contact.setiD("a");
-			
 		});
 		Assertions.assertThrows(NumberFormatException.class, () -> {
 			new Contact("a", "Josh", "Ryther", "8888888888", "3232 Road Ln");;
